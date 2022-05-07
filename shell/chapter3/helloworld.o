@@ -1,0 +1,106 @@
+
+helloworld:	file format Mach-O 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+__text:
+100000f60:	55 	pushq	%rbp
+100000f61:	48 89 e5 	movq	%rsp, %rbp
+100000f64:	48 83 ec 10 	subq	$16, %rsp
+100000f68:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f6f:	48 8d 3d 34 00 00 00 	leaq	52(%rip), %rdi
+100000f76:	b0 00 	movb	$0, %al
+100000f78:	e8 0d 00 00 00 	callq	13 <dyld_stub_binder+0x100000f8a>
+100000f7d:	31 c9 	xorl	%ecx, %ecx
+100000f7f:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f82:	89 c8 	movl	%ecx, %eax
+100000f84:	48 83 c4 10 	addq	$16, %rsp
+100000f88:	5d 	popq	%rbp
+100000f89:	c3 	retq
+
+_main:
+100000f60:	55 	pushq	%rbp
+100000f61:	48 89 e5 	movq	%rsp, %rbp
+100000f64:	48 83 ec 10 	subq	$16, %rsp
+100000f68:	c7 45 fc 00 00 00 00 	movl	$0, -4(%rbp)
+100000f6f:	48 8d 3d 34 00 00 00 	leaq	52(%rip), %rdi
+100000f76:	b0 00 	movb	$0, %al
+100000f78:	e8 0d 00 00 00 	callq	13 <dyld_stub_binder+0x100000f8a>
+100000f7d:	31 c9 	xorl	%ecx, %ecx
+100000f7f:	89 45 f8 	movl	%eax, -8(%rbp)
+100000f82:	89 c8 	movl	%ecx, %eax
+100000f84:	48 83 c4 10 	addq	$16, %rsp
+100000f88:	5d 	popq	%rbp
+100000f89:	c3 	retq
+Disassembly of section __TEXT,__stubs:
+__stubs:
+100000f8a:	ff 25 70 10 00 00 	jmpq	*4208(%rip)
+Disassembly of section __TEXT,__stub_helper:
+__stub_helper:
+100000f90:	4c 8d 1d 71 10 00 00 	leaq	4209(%rip), %r11
+100000f97:	41 53 	pushq	%r11
+100000f99:	ff 25 61 00 00 00 	jmpq	*97(%rip)
+100000f9f:	90 	nop
+100000fa0:	68 00 00 00 00 	pushq	$0
+100000fa5:	e9 e6 ff ff ff 	jmp	-26 <__stub_helper>
+Disassembly of section __TEXT,__cstring:
+__cstring:
+100000faa:	68 65 6c 6c 6f 	pushq	$1869376613
+100000faf:	20 77 6f 	andb	%dh, 111(%rdi)
+100000fb2:	72 6c 	jb	108 <dyld_stub_binder+0x100001020>
+100000fb4:	64 00  <unknown>
+Disassembly of section __TEXT,__unwind_info:
+__unwind_info:
+100000fb8:	01 00 	addl	%eax, (%rax)
+100000fba:	00 00 	addb	%al, (%rax)
+100000fbc:	1c 00 	sbbb	$0, %al
+100000fbe:	00 00 	addb	%al, (%rax)
+100000fc0:	00 00 	addb	%al, (%rax)
+100000fc2:	00 00 	addb	%al, (%rax)
+100000fc4:	1c 00 	sbbb	$0, %al
+100000fc6:	00 00 	addb	%al, (%rax)
+100000fc8:	00 00 	addb	%al, (%rax)
+100000fca:	00 00 	addb	%al, (%rax)
+100000fcc:	1c 00 	sbbb	$0, %al
+100000fce:	00 00 	addb	%al, (%rax)
+100000fd0:	02 00 	addb	(%rax), %al
+100000fd2:	00 00 	addb	%al, (%rax)
+100000fd4:	60  <unknown>
+100000fd5:	0f 00 00 	sldtw	(%rax)
+100000fd8:	34 00 	xorb	$0, %al
+100000fda:	00 00 	addb	%al, (%rax)
+100000fdc:	34 00 	xorb	$0, %al
+100000fde:	00 00 	addb	%al, (%rax)
+100000fe0:	8b 0f 	movl	(%rdi), %ecx
+100000fe2:	00 00 	addb	%al, (%rax)
+100000fe4:	00 00 	addb	%al, (%rax)
+100000fe6:	00 00 	addb	%al, (%rax)
+100000fe8:	34 00 	xorb	$0, %al
+100000fea:	00 00 	addb	%al, (%rax)
+100000fec:	03 00 	addl	(%rax), %eax
+100000fee:	00 00 	addb	%al, (%rax)
+100000ff0:	0c 00 	orb	$0, %al
+100000ff2:	01 00 	addl	%eax, (%rax)
+100000ff4:	10 00 	adcb	%al, (%rax)
+100000ff6:	01 00 	addl	%eax, (%rax)
+100000ff8:	00 00 	addb	%al, (%rax)
+100000ffa:	00 00 	addb	%al, (%rax)
+100000ffc:	00 00 	addb	%al, (%rax)
+100000ffe:	00 01 	addb	%al, (%rcx)
+Disassembly of section __DATA_CONST,__got:
+__got:
+100001000:	00 00 	addb	%al, (%rax)
+100001002:	00 00 	addb	%al, (%rax)
+100001004:	00 00 	addb	%al, (%rax)
+100001006:	00 00 	addb	%al, (%rax)
+Disassembly of section __DATA,__la_symbol_ptr:
+__la_symbol_ptr:
+100002000:	a0  <unknown>
+100002001:	0f 00 00 	sldtw	(%rax)
+100002004:	01 00 	addl	%eax, (%rax)
+100002006:	00 00 	addb	%al, (%rax)
+Disassembly of section __DATA,__data:
+__dyld_private:
+100002008:	00 00 	addb	%al, (%rax)
+10000200a:	00 00 	addb	%al, (%rax)
+10000200c:	00 00 	addb	%al, (%rax)
+10000200e:	00 00 	addb	%al, (%rax)
